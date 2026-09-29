@@ -2,15 +2,27 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    
-    <title>4. 후손 선택자와 자손 선택자</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 후손 선택자 자손 선택자</title>
+
     <style>
-    table > tbody > tr > th{
-        color: rgb(79, 77, 151);
-    }
+        #header h1{color: rgb(214, 147, 147);}
+        #section h1{color: rgba(132, 196, 146, 0.822);}
+        /* #header h1, h2 {color:blueviolet}*/
+        /* #header h1, #header h2 {color:aqua}*/
+        /*#header h1, #header h2{color: aqua;}*/
+        #header > h1{color: rgb(102, 25, 77);}
+        #section > h1{color: orange;}
+
+        table > tbody > tr > th{
+            color: rgb(79, 77, 151);
+        }
     </style>
 </head>
+
 <body>
+
+    <!-- 표를 위쪽에 배치 -->
     <h2>4. 후손 선택자와 자손 선택자</h2>
     <h3>4.2 자손 선택자</h3>
     <hr>
@@ -25,5 +37,25 @@
             <td>서울특별시</td>
         </tr>
     </table>
+
+    <hr>
+
+    <h3>1. 후손 선택자: 특정한 태그의 후손을 선택(선택자 A 선택자 B)</h3>
+    <hr>
+
+    <div id="header">
+        <h1 class="title">Lorem ipsum dolor</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+            <h2>*header안의  h2 - CSS3 Selector Basic</h2>
+        </div>
+    </div>
+
+    <div id="section">
+        <h1 class="title">Lorem ipsum dolor</h1>
+        <h2>section안의  h2 - CSS3 Selector Basic</h2>
+        <p>Lorem, ips voluptatem odit!</p>
+    </div>
+
 </body>
 </html>
