@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Units</title>
+    <style>
+        h1{color:blue;}
+        p{color: blueviolet;}
+
+        #header{
+            width:auto;
+            margin:0 auto;
+            background-color: gray;
+        }
+        #wrap{
+            width: 700px;margin: auto;
+            overflow: hidden;
+        }
+        #aside{width: 200px;float: left;
+        background-color: crimson;}
+        #content{
+            width: 600px;float: left;
+            background-color: darkgoldenrod;
+        }
+        #rint{color: blueviolet;}
+
+        .select{color: darkgreen;}
+        .sel{color: rgb(40, 46, 121);}
+        .item{color: red;}
+        .header{background-color: blue;}
+</style>
+</head>
+<body>
+
+    <h1>1. 전체 선택자</h1>
+    <h2>2. 태그 선택자</h2>
+    <h3>3.아이디 선택자</h3>
+    <h2 class="item header">4.클래스 선택자</h2>
+    
+<hr>
+  <h1 style="color:rgb(136, 30, 30);">제목 글자</h1>
+<hr>
+<ul>
+    <li class="select">배</li>
+    <li class="sel">감</li>
+    <li class="select">사과</li>
+    <li class="sel">오렌지</li>
+</ul>
+<div id="header">
+   
+    <div id="Wrap">
+        <h1>    <p>Lorem  consectetur adipiscing elit.</p>
+    <p>Lorem  consectetur adipiscing elit.</p>
+    <p>Lorem  consectetur adipiscing elit.</p>
+    <p>Lorem  consectetur adipiscing elit.</p></h1>
+    </div>
+  
+
+    <p>Lorem  consectetur adipiscing elit.</p>
+    <p>Lorem  consectetur adipiscing elit.</p>
+    <p>Lorem  consectetur adipiscing elit.</p>
+    <p>Lorem  consectetur adipiscing elit.</p>
+
+     <h1>#header태그</h1>
+    <header>#header 태그</header>
+</div>
+
+<div id="wrap">
+    <div id="aside">
+        <h1>#aside 태그</h1>
+    </div>
+
+    <div id="content">
+        <h1>#content 태그</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</div>
+
+</body>
+</html>
