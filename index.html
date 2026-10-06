@@ -1,280 +1,125 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 홈페이지 입니다.</title>
+<div id="page-wrapper">
 
-    <style>
-        body {
-            margin: 0;
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
+    <header id="main-header">
+        <h1>나의 홈페이지입니다.</h1>
 
-        #page-wrapper {
-            width: 900px;
-            margin: 30px auto;
-            background-color: white;
-            border: 1px solid #ddd;
-        }
+        <hgroup>
+            <h1 class="master-title">HTML5 Example Preview</h1>
+            <h2 class="master-description">한빛아카데미</h2>
+        </hgroup>
+    </header>
 
-        #main-header {
-            padding: 30px;
-            border-bottom: 1px solid #ddd;
-        }
+    <main>
 
-        .master-title {
-            margin: 0;
-            color: #333;
-        }
+        <h2>Chapter2</h2>
+        <a href="Chapter2/HTMLPageWithError.html">Html page -e</a><br>
+        <a href="Chapter2/HTMLPageWithStyle.html">Html-style</a><br>
+        <a href="Chapter2/HTML_PageWithStyle.html">Html</a><br>
+        <a href="Chapter2/자동완성.html">자동완성</a><br>
+        <a href="Chapter2/주석.html">주석</a><br>
 
-        .master-description {
-            margin-bottom: 0;
-            color: #888;
-            font-weight: normal;
-        }
+        <h2>Chapter3</h2>
+        <a href="Chapter3/ds.html">time line</a><br>
+        <a href="Chapter3/f.html">table</a><br>
+        <a href="Chapter3/image.html">image</a><br>
+        <a href="Chapter3/text_header.html">header</a><br>
+        <a href="Chapter3/text_content.html">content</a><br>
+        <a href="Chapter3/text_anchor.html">anchor</a><br>
 
-        #main-navigation {
-            padding: 15px 30px;
-            background-color: #333;
-        }
+        <h2>Chapter4</h2>
+        <a href="Chapter4/ne.html">login</a><br>
+        <a href="Chapter4/kk.html">div span</a><br>
+        <a href="Chapter4/sd.html">Text area</a><br>
+        <a href="Chapter4/12space.html">space</a><br>
+        <a href="Chapter4/formLabel.html">formLabel</a><br>
 
-        .outer-menu {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
+        <h2>Chapter5</h2>
+        <a href="Chapter5/Css.html">CSS</a><br>
+        <a href="Chapter5/9attribute.html">attribute</a><br>
+        <a href="Chapter5/desc_baisc.html">desc</a><br>
+        <a href="Chapter5/etc_action.html">etc</a><br>
 
-        .outer-menu-item {
-            display: inline-block;
-            margin-right: 20px;
-        }
+        <h2>Chapter6</h2>
+        <a href="chapter6/background_image.html">background_image</a><br>
+        <a href="chapter6/background_repeatNone.html">background_repeatNone</a><br>
+        <a href="chapter6/border_basic.html">border_basic</a><br>
+        <a href="chapter6/box_widthHeight.html">box_widthHeight</a><br>
+        <a href="chapter6/display_inlineWithMargin.html">display_inlineWithMargin</a><br>
+        <a href="chapter6/float_basic.html">float_basic</a><br>
+        <a href="chapter6/display_none.html">display_none</a><br>
+        <a href="chapter6/font_size.html">font_size</a><br>
+        <a href="chapter6/font_styleWeight.html">font_styleWeight</a><br>
+        <a href="chapter6/position_absolute.html">position_absolute</a><br>
+        <a href="chapter6/position_fomulaBasic.html">position_fomulaBasic</a><br>
+        <a href="chapter6/shadow_textShadow.html">shadow_textShadow</a><br>
 
-        .menu-title {
-            color: white;
-        }
+    </main>
 
-        #content {
-            display: flex;
-            gap: 25px;
-            padding: 25px;
-        }
+    <nav id="main-navigation">
 
-        #main-section {
-            flex: 1;
-        }
-
-        article {
-            margin-bottom: 20px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            background-color: white;
-        }
-
-        .article-header {
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-title {
-            margin: 0;
-            color: #333;
-        }
-
-        .article-body ul {
-            margin: 0;
-            padding-left: 25px;
-            line-height: 2;
-        }
-
-        a {
-            color: #2878b5;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        #main-aside {
-            width: 200px;
-        }
-
-        .aside-list {
-            margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            background-color: #fafafa;
-        }
-
-        .aside-list h3 {
-            margin-top: 0;
-        }
-
-        .aside-list ul {
-            margin-bottom: 0;
-            padding-left: 20px;
-            line-height: 1.8;
-        }
-
-        #main-footer {
-            padding: 20px;
-            border-top: 1px solid #ddd;
-            text-align: center;
-            color: #888;
-        }
-
-        @media (max-width: 700px) {
-            #page-wrapper {
-                width: auto;
-                margin: 10px;
-            }
-
-            #content {
-                display: block;
-            }
-
-            #main-aside {
-                width: auto;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <div id="page-wrapper">
-        <header id="main-header">
-            <hgroup>
-                <h1 class="master-title">나의 홈페이지입니다.</h1>
-                <h2 class="master-description">HTML 학습 자료 모음</h2>
-            </hgroup>
-        </header>
-
-        <nav id="main-navigation">
+        <div class="pull-left">
             <ul class="outer-menu">
+
                 <li class="outer-menu-item">
-                    <span class="menu-title">Chapter2</span>
-                </li>
-                <li class="outer-menu-item">
-                    <span class="menu-title">Chapter3</span>
-                </li>
-                <li class="outer-menu-item">
-                    <span class="menu-title">Chapter4</span>
-                </li>
-                <li class="outer-menu-item">
-                    <span class="menu-title">Chapter5</span>
-                </li>
-                <li class="outer-menu-item">
-                    <span class="menu-title">Chapter6</span>
-                </li>
-            </ul>
-        </nav>
-
-        <div id="content">
-            <section id="main-section">
-                <article>
-                    <div class="article-header">
-                        <h2 class="article-title">Chapter2</h2>
-                    </div>
-                    <div class="article-body">
-                        <ul>
-                            <li><a href="Chapter2/HTMLPageWithError.html">Html page -e</a></li>
-                            <li><a href="Chapter2/HTMLPageWithStyle.html">Html-style</a></li>
-                            <li><a href="Chapter2/HTML\_PageWithStyle.html">Html</a></li>
-                            <li><a href="Chapter2/자동완성.html">자동완성</a></li>
-                            <li><a href="Chapter2/주석.html">주석</a></li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="article-header">
-                        <h2 class="article-title">Chapter3</h2>
-                    </div>
-                    <div class="article-body">
-                        <ul>
-                            <li><a href="Chapter3/ds.html">time line</a></li>
-                            <li><a href="Chapter3/f.html">table</a></li>
-                            <li><a href="Chapter3/image.html">image</a></li>
-                            <li><a href="Chapter3/text\_header.html">header</a></li>
-                            <li><a href="Chapter3/text\_content.html">contenr</a></li>
-                            <li><a href="Chapter3/text\_anchor.html">anchor</a></li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="article-header">
-                        <h2 class="article-title">Chapter4</h2>
-                    </div>
-                    <div class="article-body">
-                        <ul>
-                            <li><a href="Chapter4/ne.html">login</a></li>
-                            <li><a href="Chapter4/kk.html">div span</a></li>
-                            <li><a href="Chapter4/sd.html">Text area</a></li>
-                            <li><a href="Chapter4/12space.html">space</a></li>
-                            <li><a href="Chapter4/formLabel.html">formLabel</a></li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="article-header">
-                        <h2 class="article-title">Chapter5</h2>
-                    </div>
-                    <div class="article-body">
-                        <ul>
-                            <li><a href="Chapter5/Css.html">CSs</a></li>
-                            <li><a href="Chapter5/9attribute.html">attribute</a></li>
-                            <li><a href="Chapter5/desc\_baisc.html">desc</a></li>
-                            <li><a href="Chapter5/etc\_action.html">etc</a></li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="article-header">
-                        <h2 class="article-title">Chapter6</h2>
-                    </div>
-                    <div class="article-body">
-                        <ul>
-                            <li><a href="chapter6/background\_image.html">background\_image</a></li>
-                            <li><a href="chapter6/background\_repeatNone.html">background\_repeatNone</a></li>
-                            <li><a href="chapter6/border\_basic.html">border\_basic</a></li>
-                            <li><a href="chapter6/box\_widthHeight.html">box\_widthHeight</a></li>
-                            <li><a href="chapter6/display\_inlineWithMargin.html">display\_inlineWithMargin</a></li>
-                            <li><a href="chapter6/float\_basic.html">float\_basic</a></li>
-                            <li><a href="chapter6/display\_none.html">display\_none</a></li>
-                            <li><a href="chapter6/font\_size.html">font\_size</a></li>
-                            <li><a href="chapter6/font\_styleWeight.html">font\_styleWeight</a></li>
-                            <li><a href="chapter6/position\_absolute.html">position\_absolute</a></li>
-                            <li><a href="chapter6/position\_fomulaBasic.html">position\_fomulaBasic</a></li>
-                            <li><a href="chapter6/shadow\_textShadow.html">shadow\_textShadow</a></li>
-                        </ul>
-                    </div>
-                </article>
-            </section>
-
-            <aside id="main-aside">
-                <div class="aside-list">
-                    <h3>카테고리</h3>
-                    <ul>
-                        <li>Chapter2</li>
-                        <li>Chapter3</li>
-                        <li>Chapter4</li>
-                        <li>Chapter5</li>
-                        <li>Chapter6</li>
+                    <span class="menu-title">HTML5</span>
+                    <ul class="inner-menu">
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
                     </ul>
-                </div>
-            </aside>
+                </li>
+
+                <li class="outer-menu-item">
+                    <span class="menu-title">CSS3</span>
+                    <ul class="inner-menu">
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                    </ul>
+                </li>
+
+                <li class="outer-menu-item">
+                    <span class="menu-title">JavaScript</span>
+                    <ul class="inner-menu">
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                        <li class="inner-menu-item"><a href="#">데이터</a></li>
+                    </ul>
+                </li>
+
+            </ul>
         </div>
 
-        <footer id="main-footer">
-            나의 홈페이지입니다.
-        </footer>
-    </div>
-</body>
-</html>
+        <div class="pull-right">
+            <div class="search-bar">
+                <form>
+                    <input type="text" class="input-search">
+                    <input type="submit" class="input-search-submit" value="검색">
+                </form>
+            </div>
+        </div>
+
+    </nav>
+
+    <aside id="main-aside">
+        <div class="aside-list">
+            <h3>카테고리</h3>
+            <ul>
+                <li>Chapter2</li>
+                <li>Chapter3</li>
+                <li>Chapter4</li>
+                <li>Chapter5</li>
+                <li>Chapter6</li>
+            </ul>
+        </div>
+    </aside>
+
+    <footer id="main-footer">
+        나의 홈페이지입니다.
+    </footer>
+
+</div>
