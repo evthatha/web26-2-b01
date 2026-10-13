@@ -4,12 +4,36 @@
     <meta charset="UTF-8">
     
     <title>그림자와 그레이디언트 속성</title>
-   
+    <style>
+
+        p{ 
+            text-shadow: 5px 5px 5px #0000ff; 
+        }
+
+  
+        .box{         
+            border: 3px solid black;
+            box-shadow: 10px 10px 10px black, 10px 10px 10px   orange, 10px 10px 10px   red; 
+            text-shadow: 5px 5px 5px black, 5px 5px 5px orange, 5px 5px 5px red;
+        }
+
+        .gradient{
+            font-family: 'Times New Roman';
+            height:60px;
+            line_height:60px;
+            text-align: center;
+
+         
+background: linear-gradient(to bottom,  #f0b7a1 0%,#8c3310 50%,#752201 67%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+        }
+    </style>
 </head>
 <body>
     <h2>그림자와 그레이디언트 속성</h2>
-    <h3> text-shadow 속성</h3>
-    <h3> box-shadow 속성</h3>
+    <h3>text-shadow 속성</h3>
+    <h3>box-shadow 속성</h3>
 
     <hr>
     <p>이 문장은 그림자가 있습니다.</p>
