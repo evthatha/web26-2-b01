@@ -1,10 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나의 홈페이지 입니다.</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "맑은 고딕", sans-serif;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        #main-aside {
+            float: right;
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-left: 1px solid #ddd;
+        }
+
+        .aside-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .aside-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        #main-navigation {
+            width: 100%;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .pull-left { float: left; }
+        .pull-right { float: right; }
+
+        .outer-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .outer-menu-item {
+            position: relative;
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+
+        .menu-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .inner-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            padding: 0;
+            min-width: 120px;
+            z-index: 1000;
+        }
+
+        .outer-menu-item:hover .inner-menu {
+            display: block;
+        }
+
+        .inner-menu-item a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .inner-menu-item a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .search-bar {
+            padding: 10px;
+        }
+
+        .input-search {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .input-search-submit {
+            padding: 5px 10px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        #main-footer {
+            clear: both;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
 
@@ -40,9 +174,8 @@
     <a href="Chapter5/9attribute.html">attribute</a><br>
     <a href="Chapter5/desc_baisc.html">desc</a><br>
     <a href="Chapter5/etc_action.html">etc</a><br>
-     <a href="Chapter5/etc_structure.html">structure</a><br>
+    <a href="Chapter5/etc_structure.html">structure</a><br>
     <a href="Chapter5/etc_structure2.html">structuer_2</a><br>
-   
 
     <h2>Chapter6</h2>
     <a href="chapter6/background_image.html">background_image</a><br>
@@ -51,25 +184,18 @@
     <a href="chapter6/box_widthHeight.html">box_widthHeight</a><br>
     <a href="chapter6/float_basic.html">float_basic</a><br>
     <a href="chapter6/display_none.html">display_none</a><br>
-    <a href="chapter6/float_basic.html">float_basic</a><br>
     <a href="chapter6/font_size.html">font size</a><br>
     <a href="chapter6/font_styleWeight.html">font_styleWeight</a><br>
-     <a href="chapter6/position_absolute.html">position_absolute</a><br>
-     <a href="chapter6/position_fomulaBasic.html">position_fomulaBasic</a><br>
-     <a href="chapter6/shadow_textShadow.html">shadow_textShadow</a><br>
-      <a href="chapter6/display_inlineWithMargin.html">display_inlineWithMargin</a><br>
-   
-
-    
-    
+    <a href="chapter6/position_absolute.html">position_absolute</a><br>
+    <a href="chapter6/position_fomulaBasic.html">position_fomulaBasic</a><br>
+    <a href="chapter6/shadow_textShadow.html">shadow_textShadow</a><br>
+    <a href="chapter6/display_inlineWithMargin.html">display_inlineWithMargin</a><br>
 
 </main>
 
 <nav id="main-navigation">
-
     <div class="pull-left">
         <ul class="outer-menu">
-
             <li class="outer-menu-item">
                 <span class="menu-title">HTML5</span>
                 <ul class="inner-menu">
@@ -77,7 +203,6 @@
                     <li class="inner-menu-item"><a href="#">데이터</a></li>
                 </ul>
             </li>
-
             <li class="outer-menu-item">
                 <span class="menu-title">CSS3</span>
                 <ul class="inner-menu">
@@ -86,7 +211,6 @@
                     <li class="inner-menu-item"><a href="#">데이터</a></li>
                 </ul>
             </li>
-
             <li class="outer-menu-item">
                 <span class="menu-title">JavaScript</span>
                 <ul class="inner-menu">
@@ -96,10 +220,8 @@
                     <li class="inner-menu-item"><a href="#">데이터</a></li>
                 </ul>
             </li>
-
         </ul>
     </div>
-
     <div class="pull-right">
         <div class="search-bar">
             <form>
@@ -108,15 +230,11 @@
             </form>
         </div>
     </div>
-
 </nav>
 
 <aside id="main-aside">
-
     <div class="aside-list">
-
         <h3>카테고리</h3>
-
         <ul>
             <li>Chapter2</li>
             <li>Chapter3</li>
@@ -124,11 +242,12 @@
             <li>Chapter5</li>
             <li>Chapter6</li>
         </ul>
-
     </div>
-
 </aside>
 
 <footer id="main-footer">
     나의 홈페이지입니다.
 </footer>
+
+</body>
+</html>
