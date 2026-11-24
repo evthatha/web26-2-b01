@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Basic</title>
+    <style>
+        .gradient-line {
+            height: 2px;
+            width: 100%;
+            display: block;
+        }
+        .content-section {
+            padding: 20px;
+        }
+    </style>
     <script>
         window.onload = function() {
             let output = '';
             for(let i = 0; i < 256; i++) {
-                output += '<div></div>';
+                output += '<div class="gradient-line"></div>';
             }
 
-            document.body.innerHTML = output;
+            document.body.insertAdjacentHTML('afterbegin', output);
 
-            let divs = document.querySelectorAll('div');
+            let divs = document.querySelectorAll('.gradient-line');
             for(let i = 0; i < divs.length; i++){
                 let div = divs[i];
-
-                div.style.height = '2px';
-                div.style.background = 'rgb(' + i + ',' + i + ',' + i + ')';
+                div.style.background = `rgb(${i}, ${i}, ${i})`;
             }
         };
     </script>
 </head>
 
 <body>
-
-    
-
-    <hr>
-    <h2>03문서 객체 조작</h2>
-    <ol>
-        <li>글자 조작</li>
-        <li><b>스타일 조작</b></li>
-        <li>속성 조작</li>
-    </ol>
-
+    <div class="content-section">
+        <hr>
+        <h2>03 문서 객체 조작</h2>
+        <ol>
+            <li>글자 조작</li>
+            <li><b>스타일 조작</b></li>
+            <li>속성 조작</li>
+        </ol>
+    </div>
 </body>
 
 </html>
